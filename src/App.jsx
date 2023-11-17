@@ -7,19 +7,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 function App() {
-  const [todos, setToDos] = useState([]);
+  const [todos, setToDos] = useState(JSON.parse(localStorage.getItem('items')) ?? []);
   
   useEffect(() => {
     localStorage.setItem('items', JSON.stringify(todos));
-    console.log('11111111');
-  }, [todos]);
-  
-  useEffect(() => {
-    const items = JSON.parse(localStorage.getItem('items'));
-    if (items) {
-     setToDos(items);
-    }
-  }, []);
+    }, [todos])
 
 
 
