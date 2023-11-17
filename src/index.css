@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container-cards{
+  display: flex;
+  justify-content: center;
+}
+
+.form-control{ 
+  background: transparent !important;
+  border: solid 2px white !important;
+}
+select{ 
+  background: transparent !important;
+  border: solid 2px white !important;
+}
+textarea{ 
+  background: transparent !important;
+  border: solid 2px white !important;
+}
+.card{ 
+  --bs-card-bg: transparent;
+}
+
+
+@media (max-width: 576px) {
+  /* CUSTOM WIDTHS */
+  .w-sm-100 { width: 100%!important; }
+}
+
+@media (min-width: 576px) {
+  /* CUSTOM WIDTHS */
+  .w-sm-100 { width: 75%!important; }
+}
+
+
