@@ -43,6 +43,13 @@ textarea{
 .card{ 
   --bs-card-bg: transparent;
 }
+#no-task{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  opacity: 70%;
+}
 
 
 @media (max-width: 576px) {
